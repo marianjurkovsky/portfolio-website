@@ -106,3 +106,9 @@ a:active {
   background-color: #f49366;
   color: #ffffff;
 }
+header {
+  background-color: #f9e69f;
+  padding: 10px;
+  margin: 10px;
+  border-bottom: 3px solid #4a4a4a;
+}
