@@ -7,6 +7,9 @@ Cyan: #b0dee5;
 Light blue cyan: #d1feff;
 
 */
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: #ffffff;
   font-family: 'Montserrat',
@@ -15,27 +18,28 @@ body {
   /* Sets the font size to 16px */
   font-weight: 300;
   /* Sets the font weight to 300 */
-  line-height: 1.6;
+  line-height: 1.4;
   /* Sets the line-height to 1.6 * the font-size */
   color: black;
 }
 
+}
 h1, h2, h3, h4 {
-  line-height: 1.4;
+  line-height: 1.2;
 }
 
 h1 {
-  font-size: 2.75em;
-  font-weight: 700;
-}
-
-h2 {
   font-size: 2.25em;
   font-weight: 700;
 }
 
-h3 {
+h2 {
   font-size: 1.75em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5em;
   font-weight: 400;
 }
 
@@ -49,7 +53,7 @@ img {
 }
 
 a {
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
   /* No underlining */
 }
@@ -58,11 +62,12 @@ a:visited {
   /* visited link */
   color: #f49366;
 }
+
 a:focus {
-  color: #ffffff
-  ;}
-a:hover
- {
+  color: #ffffff;
+}
+
+a:hover {
   color: #303c6c;
   text-decoration: none;
 }
@@ -73,24 +78,29 @@ a:active {
 }
 
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #f49366;
-  color: #ffffff; /* needed to override the default link color */
+  color: #ffffff;
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  border-bottom: 2px solid #994c30;
+  /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
-
-.button:visited{
+.button:visited {
   color: #ffffff
 }
+
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
+
 .button:active {
   color: #b0dee5;
 }
@@ -106,9 +116,105 @@ a:active {
   background-color: #f49366;
   color: #ffffff;
 }
-header {
-  background-color: #f9e69f;
-  padding: 10px;
-  margin: 10px;
-  border-bottom: 3px solid #4a4a4a;
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+  max-width: 1200px;
 }
+
+header {
+  position: fixed;
+    width: 100%;
+  -webkit-box-shadow: 10px 3px 5px 0px rgba(192, 192, 213, 0.75);
+  -moz-box-shadow: 10px 3px 5px 0px rgba(192, 192, 213, 0.75);
+  box-shadow: 10px 3px 5px 0px rgba(192, 192, 213, 0.75);
+  background-color: #f9e69f;
+  padding: padding: 10px 0 0;
+  text-align: center;
+
+}
+
+.row {
+  width: 100%;
+  overflow: hidden;
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+#hero h1, {
+  text-align: center;
+  /* Centers text */
+}
+
+#hero p {
+  text-align: center;
+}
+
+#hero {
+  background-color: #f9e69f;
+  padding: 20px 0;
+
+
+  display: inline-block;
+  width: 100%;
+}
+.centerMe {
+  text-align: center;
+}
+h1, h2 {
+  text-align: center;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #f49366;
+}
+  nav>ul>li>a:visited {
+    color: #f49366;
+  }
+
+  .navigation {
+    display: inline-block;
+    width: 100%;
+  }
+  main {
+    padding-top: 133px;
+  }
+.linkedin {
+  display:inline-block
+}
+.behance {
+  display:inline-block;
+}
+.socialmedia {
+  text-align:center
+}
+.title {
+  text-align: center;
+  padding: 50px;
+  display: inline-block;
+  width: 100%;
+}
+.first {float: left;}
+.second {float: right;}
