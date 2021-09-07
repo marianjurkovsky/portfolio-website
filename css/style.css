@@ -10,6 +10,7 @@ Light blue cyan: #d1feff;
 * {
   box-sizing: border-box;
 }
+
 body {
   background-color: #ffffff;
   font-family: 'Montserrat',
@@ -23,7 +24,7 @@ body {
   color: black;
 }
 
-}
+
 h1, h2, h3, h4 {
   line-height: 1.2;
 }
@@ -31,6 +32,7 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2.25em;
   font-weight: 700;
+  color: #303c6c;
 }
 
 h2 {
@@ -51,7 +53,11 @@ h4 {
 img {
   width: 100%;
 }
+span {
 
+font-weight: bold;
+
+}
 a {
   color: #000000;
   text-decoration: none;
@@ -76,7 +82,6 @@ a:active {
   /* selected link */
   color: #D8BDB0;
 }
-
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
@@ -125,14 +130,13 @@ a:active {
 
 header {
   position: fixed;
-    width: 100%;
+  width: 100%;
   -webkit-box-shadow: 10px 3px 5px 0px rgba(192, 192, 213, 0.75);
   -moz-box-shadow: 10px 3px 5px 0px rgba(192, 192, 213, 0.75);
   box-shadow: 10px 3px 5px 0px rgba(192, 192, 213, 0.75);
   background-color: #f9e69f;
-  padding: padding: 10px 0 0;
+ padding: 10px 0 0;
   text-align: center;
-
 }
 
 .row {
@@ -146,8 +150,7 @@ header {
   padding-bottom: 25px;
   border-bottom: 1px solid #4a4a4a;
 }
-
-#hero h1, {
+#hero h1 {
   text-align: center;
   /* Centers text */
 }
@@ -159,14 +162,14 @@ header {
 #hero {
   background-color: #f9e69f;
   padding: 20px 0;
-
-
   display: inline-block;
   width: 100%;
 }
+
 .centerMe {
   text-align: center;
 }
+
 h1, h2 {
   text-align: center;
 }
@@ -175,7 +178,7 @@ h1, h2 {
   max-width: 250px;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
 }
@@ -190,31 +193,152 @@ nav>ul>li>a {
   font-weight: 700;
   color: #f49366;
 }
-  nav>ul>li>a:visited {
-    color: #f49366;
-  }
 
-  .navigation {
-    display: inline-block;
-    width: 100%;
-  }
-  main {
-    padding-top: 133px;
-  }
+nav>ul>li>a:visited {
+  color: #f49366;
+}
+
+.navigation {
+  display: inline-block;
+  width: 100%;
+}
+
+main {
+  padding-top: 133px;
+}
+
 .linkedin {
-  display:inline-block
+  display: inline-block
 }
+
 .behance {
-  display:inline-block;
+  display: inline-block;
 }
+
 .socialmedia {
-  text-align:center
+  text-align: center
 }
+
 .title {
   text-align: center;
   padding: 50px;
   display: inline-block;
   width: 100%;
 }
-.first {float: left;}
-.second {float: right;}
+
+
+
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  #hero span {
+  display: block;
+}
+.col-md-6 {
+  width: 50%;
+}
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#about-page h3 { margin-top: 0;}
+}
+.myprofilepicture {
+  width: 60%;
+  display: block; margin-left: auto; margin-right: auto;
+
+
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+      width: 58.33%;
+    }
+    .col-lg-5 {
+      width: 41.66%;
+    }
+    .container {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    [class*="col-"] {
+      float: left;
+      padding-left: 10px;
+    }
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {}
+  @keyframes color-change {
+    from {fill:  #E9C99A;}
+    to {fill: #f76414;}
+  }
+  .sun {
+    animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  }
+  @keyframes color-change2 {
+    from {fill:  #E9C99A;}
+    to {fill: #8F00FF;}
+  }
+  .tower {
+    animation-duration: 4s;
+  animation-name: color-change2;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  }
+  .cloud-front {
+  animation-duration: 20s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+  @keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}

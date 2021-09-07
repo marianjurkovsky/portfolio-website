@@ -16,21 +16,26 @@
   </title>
 </head>
 
-<body>
+<body id="about-page">
   <header>
     <div class="container">
       <img src="img/logo/mjd-logo-copy.svg" class="logo" alt="Marian Jurkovsky logo" />
+
       <nav>
         <ul class="navigation">
-            <li><a href="index.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+
+          <li><a href="index.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+
+        </ul>
       </nav>
+
     </div>
   </header>
   <main>
-        <div class="container"><!-- start about section title -->
+    <div class="container">
+      <!-- start about section title -->
       <!-- open main container -->
       <div class="title">
         <!-- open heading -->
@@ -40,15 +45,15 @@
     <!--close heading -->
     <div class="container">
       <!-- open bottom orange container -->
-      <div>
+    
         <!-- open large bottom yellow container -->
         <picture>
           <source srcset="img/about/Marian-about@1x.jpeg/" media="(max-width:767px)">
-          <img src="img/about/Marian-about@2x.jpeg/" alt="Marian Jurkovsky image">
+          <img class="myprofilepicture" src="img/about/Marian-about@2x.jpeg/" alt="Marian Jurkovsky image">
         </picture>
-        <div>
+        <div class="row">
           <!--open Bottom  green container with 2 columns -->
-          <div>
+          <div class="column col-lg-7">
             <!--open left column -->
             <h2>My Story</h2>
             <p>I'm Marian Jurkovsky, a UI/UX Designer & product person passionate about designing innovative yet straightforward visuals and experiences. I enjoy solving problems with inspiration from real-life stories.
@@ -59,17 +64,17 @@
             <p>Helping people has always been at the core of what I do. Working in the hospitality industry most of my life made me be a good listener and helped improve my problem-solving abilities for good.
               When I'm away from my work desk, I love being outdoors - walking by the river, cycle around town, traveling to learn about world history, or sitting with friends or family in a beer garden.
             </p>
-<div class="centerMe">
-            <a href="files/Resume-Under-Construction.pdf" target="_blank" class="button" >Download My Resume</a>
+            <div class="centerMe">
+              <a href="files/Resume-Under-Construction.pdf" target="_blank" class="button">Download My Resume</a>
+            </div>
           </div>
-        </div>
           <!--close left column -->
-          <div>
+          <div class="column col-lg-5">
             <!--open right column -->
             <h2>Skills & Tools</h2>
-            <div>
+            <div class="row">
               <!-- open container for skills and tools -->
-              <div>
+              <div class="col-md-6">
                 <!--open container for skills -->
                 <h3>Relevant Skills</h3>
                 <ul>
@@ -90,7 +95,7 @@
                 </ul>
               </div>
               <!--close container for skills -->
-              <div>
+              <div class="col-md-6">
                 <!--open container for tools -->
                 <h3>Tools I use</h3>
                 <ul>
@@ -101,9 +106,10 @@
                 </ul>
               </div>
               <!--close container for tools -->
-            </div><!-- close container for skills and tools -->
-          </div>
-          <!--close right column -->
+              <!-- close container for skills and tools -->
+            </div>
+            <!--close right column -->
+
         </div>
         <!--close Bottom  green container with 2 columns -->
       </div><!-- close large bottom yellow container -->
@@ -144,7 +150,7 @@
             <g id="Layer_1" />
           </svg>
         </a>
-      </div class="centerMe">
+      </div>
       <p class="centerMe">Copyright Marian Jurkovsky 2021</p>
     </div>
   </footer>
