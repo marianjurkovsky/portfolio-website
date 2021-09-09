@@ -226,8 +226,36 @@ main {
   width: 100%;
 }
 
-
-
+.subnav {
+  white-space: nowrap;
+  background: none;
+}
+.subnav  ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+/* Only stick if you can fit */
+@media (min-height: 300px) {
+  .subnav ul {
+    position: sticky;
+    top: 0px;
+  }
+}
+.subnav  ul li a {
+  display: block;
+  padding: 0.5rem 0.5rem;
+  color: #f49366;
+  text-decoration: none;
+}
+.subnav  ul li a.current {
+  background: black;
+}
+section {
+  padding: 0rem;
+  overflow: hidden;
+  margin: 0 0 2rem 0;
+}
 
 /* ==============================
 Medium devices (640px and larger)
@@ -237,7 +265,6 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 20px 0 13px;
   }
-
   nav {
     width: auto;
     float: right;
@@ -248,6 +275,9 @@ Medium devices (640px and larger)
 }
 .col-md-6 {
   width: 50%;
+}
+.col-lg-5 {
+  width:100%;
 }
 [class*="col-"] {
   float: left;
@@ -263,9 +293,8 @@ Medium devices (640px and larger)
 .myprofilepicture {
   width: 60%;
   display: block; margin-left: auto; margin-right: auto;
-
-
 }
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
