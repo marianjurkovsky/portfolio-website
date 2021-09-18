@@ -12,6 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
+  <script src="https://kit.fontawesome.com/8f23e52dfd.js" crossorigin="anonymous"></script>
   <title>Easy Web Chef
   </title>
 </head>
@@ -19,32 +20,34 @@
 <body>
   <header>
     <div class="container">
-      <img src="img/logo/mjd-logo-copy.svg" class="logo" alt="Marian Jurkovsky logo" />
-      <nav>
-        <ul class="navigation">
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="navtoggle" id="myNavtoggle">
+        <img src="img/logo/mjd-logo-copy.svg" class="logo" alt="Marian Jurkovsky logo" />
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
   <main>
-
     <div class="container">
       <div>
         <div class="title">
           <h1>Easy Web Chef</h1>
         </div>
-          <div class="subnav">
-  <ul>
-    <li><a href="#research">Research</a></li>
-    <li><a href="#ideation">Ideation</a></li>
-    <li><a href="#wireframe">Wireframe</a></li>
-    <li><a href="#design">Design</a></li>
-    <li><a href="#prototype">Prototype & Mockups</a></li>
-  </ul>
-      </div>
+        <div class="subnav">
+          <ul>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#ideation">Ideation</a></li>
+            <li><a href="#wireframe">Wireframe</a></li>
+            <li><a href="#design">Design</a></li>
+            <li><a href="#prototype">Prototype & Mockups</a></li>
+          </ul>
+        </div>
       </div>
       <div>
         <div>
@@ -66,116 +69,105 @@
           <h2>My Proces</h2>
         </div>
       </div>
-
       <section id="research">
-      <div>
 
+<div id="scroll">
         <h3><span>Research</span></h3>
-      </div>
+</div>
 
-      <p>After an initial competitive analysis to gain an overview of other companies, defining their strengths, weaknesses, threats, and opportunities, I conducted Interviews with 3 users to learn more about the cooking process and the needs or
-        frustrations. By creating qualitative research, I discover what features users are considering necessary in the cooking recipe app and also what would be helpful to make their experience more satisfying.</p>
+        <p>After an initial competitive analysis to gain an overview of other companies, defining their strengths, weaknesses, threats, and opportunities, I conducted Interviews with 3 users to learn more about the cooking process and the needs or
+          frustrations. By creating qualitative research, I discover what features users are considering necessary in the cooking recipe app and also what would be helpful to make their experience more satisfying.</p>
 
-      <p>What users were saying:
-      </p>
+        <p>What users were saying:
+        </p>
 
-      <ul>
-        <li>Regarding the cooking process.</li>
-      </ul>
-      <p><span>“I am often not sure about proper measurements, cooking temperature, or how to
-          change meal size.”
-        </span></p>
-      <p><span>“I can’t tell if the dish taste or looks right.”
-        </span></p>
-      <ul>
-        <li>Need help to choose the recipe.</li>
-      </ul>
-      <p><span>“I search by basic ingredients and usually decide based on reviews and pictures”
-      </span>
-      </p>
-      <p><span>“I look mostly for not complicated recipes with short preparation time.”
-        </span></p>
-      <ul>
-        <li>Want a more comprehensive recipe.</li>
-      </ul>
-      <p><span>“I like video recipes; it makes it easier to follow and be confident in the process.”
-        </span></p>
-      <p><span>“It will be great to use leftovers again.”</span></p>
-      <div>
-        <picture>
-          <source srcset="img/easy_web_chef/Research_Mobile_Projecta@1x.jpg" media="(max-width:767px)">
-          <img src="img/easy_web_chef/Research_Projecta@2x.jpg/" alt="Easy Web Chef Research">
-        </picture>
-      </div>
-</section>
-
+        <ul>
+          <li>Regarding the cooking process.</li>
+        </ul>
+        <p><span>“I am often not sure about proper measurements, cooking temperature, or how to
+            change meal size.”
+          </span></p>
+        <p><span>“I can’t tell if the dish taste or looks right.”
+          </span></p>
+        <ul>
+          <li>Need help to choose the recipe.</li>
+        </ul>
+        <p><span>“I search by basic ingredients and usually decide based on reviews and pictures”
+          </span>
+        </p>
+        <p><span>“I look mostly for not complicated recipes with short preparation time.”
+          </span></p>
+        <ul>
+          <li>Want a more comprehensive recipe.</li>
+        </ul>
+        <p><span>“I like video recipes; it makes it easier to follow and be confident in the process.”
+          </span></p>
+        <p><span>“It will be great to use leftovers again.”</span></p>
+        <div>
+          <picture>
+            <source srcset="img/easy_web_chef/Research_Mobile_Projecta@1x.jpg" media="(max-width:767px)">
+            <img src="img/easy_web_chef/Research_Projecta@2x.jpg/" alt="Easy Web Chef Research">
+          </picture>
+        </div>
+      </section>
       <section id="ideation">
-      <div>
+        <div>
+          <h3><span>Ideation</span></h3>
+        </div>
+        <p>To further understand and empathize with the users, I created three user personas to represent users' needs and frustrations and synthesize data obtained from research.
+        </p>
+        <p>Building on this I chose my primary user stories from the list included in the brief:</p>
+        <ul>
+          <li>When I open the app to search for a recipe, I want to be able to start searching for what I want to prepare so that I can save time and effort.
+          </li>
+        </ul>
+        <p><span>- A menu that is broken down into well- known food categories.
+          </span></p>
+        <p><span>- Filtering search option to define and speed what user is looking for.
+          </span></p>
+        <ul>
+          <li>When I try the recipe I like, I want to save it and share it, so I can easily access it next time and enjoy it with others.
+          </li>
+        </ul>
+        <p><span>- Create User Account Page to save favorite recipes.
+          </span></p>
+        <p><span>- Create recipe sharing option, social media, mail, print.
+          </span></p>
+        <ul>
+          <li>When going thru recipes, I want to see images of food I am preparing, so I can visualize and better understand the cooking process.
+            Images showing step by step process of preparation for easy following
+          </li>
+        </ul>
+        <p><span>- Images showing step by step process of preparation for easy following.
+          </span></p>
+        <p><span>- Final product picture or video presentation.</span></p>
+        <ul>
+          <li>As a person cooking for myself or others, I want to choose how many people I cook so that I can avoid waste of food and money.
+          </li>
+        </ul>
+        <p><span>- Include option to manipulate on serving size.
+          </span></p>
 
-        <h3><span>Ideation</span></h3>
-      </div>
-      <p>To further understand and empathize with the users, I created three user personas to represent users' needs and frustrations and synthesize data obtained from research.
-      </p>
-
-      <p>Building on this I chose my primary user stories from the list included in the brief:</p>
-
-      <ul>
-        <li>When I open the app to search for a recipe, I want to be able to start searching for what I want to prepare so that I can save time and effort.
-        </li>
-      </ul>
-      <p><span>- A menu that is broken down into well- known food categories.
-      </span></p>
-      <p><span>- Filtering search option to define and speed what user is looking for.
-      </span></p>
-      <ul>
-        <li>When I try the recipe I like, I want to save it and share it, so I can easily access it next time and enjoy it with others.
-        </li>
-      </ul>
-      <p><span>- Create User Account Page to save favorite recipes.
-      </span></p>
-      <p><span>- Create recipe sharing option, social media, mail, print.
-      </span></p>
-      <ul>
-        <li>When going thru recipes, I want to see images of food I am preparing, so I can visualize and better understand the cooking process.
-          Images showing step by step process of preparation for easy following
-        </li>
-      </ul>
-      <p><span>- Images showing step by step process of preparation for easy following.
-      </span></p>
-      <p><span>- Final product picture or video presentation.</span></p>
-      <ul>
-        <li>As a person cooking for myself or others, I want to choose how many people I cook so that I can avoid waste of food and money.
-        </li>
-      </ul>
-      <p><span>- Include option to manipulate on serving size.
-      </span></p>
-
-      <ul>
-        <li>As a person who relies on user's opinion, I want to read other people reactions to the recipe, so I can get help to decide to choose one.
-        </li>
-      </ul>
-      <p><span>- Create recipe rating options, comments – review section.
-      </span></p>
-      <div>
-        <picture>
-          <source srcset="img/easy_web_chef/Ideation_Mobile_Project@1x.jpg/" media="(max-width:767px)">
-          <img src="img/easy_web_chef/Ideation_Project@2x.jpg/" alt="Easy Web Chef Ideation. User Persona & User Flow">
-        </picture>
-      </div>
-    </section>
-
-      <div>
-        <section id="wireframe">
+        <ul>
+          <li>As a person who relies on user's opinion, I want to read other people reactions to the recipe, so I can get help to decide to choose one.
+          </li>
+        </ul>
+        <p><span>- Create recipe rating options, comments – review section.
+          </span></p>
+        <div>
+          <picture>
+            <source srcset="img/easy_web_chef/Ideation_Mobile_Project@1x.jpg/" media="(max-width:767px)">
+            <img src="img/easy_web_chef/Ideation_Project@2x.jpg/" alt="Easy Web Chef Ideation. User Persona & User Flow">
+          </picture>
+        </div>
+      </section>
+      <section id="wireframe">
         <h3><span>Wireframe</span></h3>
-      </div>
+        <p>Crazy 8’s methodology generated a lot of design ideas. I sketched 8 different low-fidelity solutions for the same design problem in 8 minutes. Screens slightly changed during the evolution of the project, but this technique founded the first
+          visual interpretation of my ideas.</p>
 
-      <p>Crazy 8’s methodology generated a lot of design ideas. I sketched 8 different low-fidelity solutions for the same design problem in 8 minutes. Screens slightly changed during the evolution of the project, but this technique founded the
-        first
-        visual interpretation of my ideas.</p>
-
-      <p>Once I finished sketching, I conducted a usability test to evaluate the key concepts and identify usability issues with the prototype. After analyzing the feedback I received, I refined the wireframes into digitalized higher fidelity.
-        I
-        continued to refine with the help of feedback from my mentor until I had a set of final high-fidelity screens.</p>
+        <p>Once I finished sketching, I conducted a usability test to evaluate the key concepts and identify usability issues with the prototype. After analyzing the feedback I received, I refined the wireframes into digitalized higher fidelity.
+          I continued to refine with the help of feedback from my mentor until I had a set of final high-fidelity screens.</p>
         <div>
           <picture>
             <source srcset="img/easy_web_chef/Wireframe_Project@1x.jpg" media="(max-width:767px)">
@@ -184,10 +176,10 @@
         </div>
 
       </section>
-      <div>
+
         <section id="design">
-        <h3><span>Design</span></h3>
-      </div>
+          <h3><span>Design</span></h3>
+
 
       <p>Wireframes were getting ready to step out from black and white composition. For that, I have created 2 visual moods, one more rustic with an early day expression and another warm, relaxing, and spicey. I chose at the end a warmer tone
         mood board</p>
@@ -199,26 +191,26 @@
           <source srcset="img/easy_web_chef/Design_Mobile_Project@1x.jpg" media="(max-width:767px)">
           <img src="img/easy_web_chef/Design_Project@2x.jpg/" alt="Easy Web Chef Wireframes">
         </picture>
-
       </div>
+      </section>
 
-        </section>
-      <div>
         <section id="prototype">
-        <h3><span>Prototype & Mockups</span></h3>
-      </div>
+          <h3><span>Prototype & Mockups</span></h3>
 
       <p>I created a set of mockups to show the final screens and for the best possible user experience across various devices and have in mind where the app will be used I adjusted screens for 4 different breakpoints.</p>
-      <a href="">View Mobile Prototype here</a><br>
-
-      <a href="https://www.behance.net/gallery/124955347/UXUI-Case-Study-Responsive-Web-App">View Case Study here</a>
+      <div class="subnav">
+        <ul>
+          <li><a href="">View Mobile Prototype here</a></li>
+          <li><a href="https://www.behance.net/gallery/124955347/UXUI-Case-Study-Responsive-Web-App">View Case Study here</a></li>
+        </ul>
+      </div>
       <div>
         <picture>
           <source srcset="img/easy_web_chef/Mockups_Project@1x.jpg" media="(max-width:767px)">
           <img src="img/easy_web_chef/Mockups_Project@2x.jpg/" alt="Easy Web Chef Wireframes">
         </picture>
       </div>
-    </section>
+      </section>
       <div>
         <div>
           <h2>Conclusion</h2>
@@ -266,10 +258,8 @@
       <p class="centerMe">Copyright Marian Jurkovsky 2021</p>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js" integrity="sha256-Ap4KLoCf1rXb52q+i3p0k2vjBsmownyBTE1EqlRiMwA=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
-  <script>
-    alert("Second navigation is in progress");
-    </script>
 </body>
 
 </html>

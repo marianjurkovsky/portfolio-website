@@ -12,24 +12,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
+  <script src="https://kit.fontawesome.com/8f23e52dfd.js" crossorigin="anonymous"></script>
   <title>About Marian Jurkovsky
   </title>
 </head>
+
 <body id="about-page">
   <header>
     <div class="container">
-      <img src="img/logo/mjd-logo-copy.svg" class="logo" alt="Marian Jurkovsky logo" />
-
-      <nav>
-        <ul class="navigation">
-
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-
-        </ul>
-      </nav>
-
+      <div class="navtoggle" id="myNavtoggle">
+        <img src="img/logo/mjd-logo-copy.svg" class="logo" alt="Marian Jurkovsky logo" />
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
   <main>
@@ -114,8 +115,6 @@
       </div><!-- close large bottom yellow container -->
     </div><!-- close main container -->
   </main>
-
-
   <footer id="contact">
     <div class="container">
       <h2>Get in Touch</h2>
@@ -153,8 +152,8 @@
       <p class="centerMe">Copyright Marian Jurkovsky 2021</p>
     </div>
   </footer>
-
-<script src="js/scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js" integrity="sha256-Ap4KLoCf1rXb52q+i3p0k2vjBsmownyBTE1EqlRiMwA=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
