@@ -236,6 +236,7 @@ main {
 
 .subnav ul {
   list-style: none;
+  font-weight:bold;
   margin: 0px;
   padding: 20px;
 }
@@ -266,7 +267,7 @@ main {
 section {
   padding: 0rem;
   margin: 0 0 2rem 0;
-  scroll-margin-top: 40px;
+  scroll-margin-top: 150px;
 }
 .navtoggle li:not(:last-child) {
   display: none;
