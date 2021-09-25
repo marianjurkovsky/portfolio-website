@@ -241,23 +241,13 @@ main {
   padding: 20px;
 }
 
-/* Only stick if you can fit */
-@media (min-height: 300px) {
-  .subnav ul {
-    position: sticky;
-    top: 0px;
-  }
-}
 
 .subnav ul li a {
   display: block;
   color: #f49366;
   text-decoration: none;
 }
-.subnav.a:hover {
-  color: #303c6c;
 
-}
 
 .subnav>ul>li>a:hover {
   color: #303c6c;

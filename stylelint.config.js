@@ -130,5 +130,4 @@ module.exports = {
     "value-list-max-empty-lines": 0,
   },
 }
-@marianjurkovsky
-Attach files by dragging & droppin
+  @ marianjurkovsky
