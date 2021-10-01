@@ -24,6 +24,10 @@ body {
   color: black;
 }
 
+h1, h2, h3, h4 {
+  line-height: 1.2;
+}
+
 h1 {
   font-size: 2.25em;
   font-weight: 700;
@@ -183,9 +187,8 @@ nav>ul {
 }
 
 nav>ul>li>a {
-  padding: 0 4px;
+  padding: 0 5px;
   text-transform: uppercase;
-  font-size: 21px;
   font-weight: 700;
   color: #E55410;
 }
@@ -242,7 +245,7 @@ main {
 
 .subnav ul li a {
   display: block;
-  color: #E55410;
+  color: #f49366;
   text-decoration: none;
 }
 
@@ -303,11 +306,9 @@ Medium devices (640px and larger)
   }
 
   nav {
-
     width: auto;
     float: right;
     margin-top: 4px;
-
   }
 
   #hero span {
@@ -319,7 +320,7 @@ Medium devices (640px and larger)
   }
 
   .col-lg-5 {
-    width: 50%;
+    width: 100%;
   }
 
   [class*="col-"] {
@@ -339,7 +340,6 @@ Medium devices (640px and larger)
 
   .myprofilepicture {
     width: 60%;
-
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -352,6 +352,7 @@ Medium devices (640px and larger)
   nav>ul>li {
     display: inline-block;
   }
+
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
@@ -394,9 +395,7 @@ Large devices (1024px or larger)
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-
-}
+@media only screen and (min-width: 1440px) {}
 
 @keyframes color-change {
   from {
