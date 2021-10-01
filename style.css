@@ -320,7 +320,7 @@ Medium devices (640px and larger)
   }
 
   .col-lg-5 {
-    width: 100%;
+    width: 50%;
   }
 
   [class*="col-"] {
