@@ -406,7 +406,13 @@ X-large devices (1440px or larger)
     fill: #f76414;
   }
 }
-
+.sun2 {
+  animation-duration: 2s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
 .sun {
   animation-duration: 4s;
   animation-name: color-change;
