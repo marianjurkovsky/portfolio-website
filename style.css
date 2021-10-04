@@ -182,7 +182,7 @@ h1, h2 {
 
 nav>ul {
   list-style-type: none;
-  padding: 0;
+  padding:0 5px;
   margin: 0;
 }
 
@@ -202,6 +202,7 @@ nav>ul>li>a:visited {
 
 nav>ul>li>a:hover {
   padding: 0 5px;
+  text-transform: uppercase;
   font-weight: 700;
   color: #303c6c;
 }
